@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um site especial para celebrar o nosso relacionamento com carinho, memórias e amor."
+    />
+    <title>Nosso Amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-ambient" aria-hidden="true">
+      <span class="orb orb--one"></span>
+      <span class="orb orb--two"></span>
+      <span class="orb orb--three"></span>
+      <span class="spark spark--one"></span>
+      <span class="spark spark--two"></span>
+      <span class="spark spark--three"></span>
+    </div>
+
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#historia">Nossa história</a>
+        <a href="#momentos">Momentos</a>
+        <a href="#musica">Nossa música</a>
+        <a href="#carta">Para você</a>
+      </nav>
+    </header>
+
+    <main id="inicio" class="page-shell">
+      <section class="hero reveal">
+        <div class="hero__content">
+          <span class="eyebrow">Para a pessoa que transformou meus dias</span>
+          <h1>Você é o melhor capítulo da minha história.</h1>
+          <p class="hero__lead">
+            <!-- ALTERAR FRASES AQUI -->
+            Um pequeno lugar na internet para guardar um pouco de tudo que sinto por você.
+          </p>
+          <div class="hero__actions">
+            <a class="primary-button" href="#historia">Ver nossa história ❤️</a>
+          </div>
+        </div>
+
+        <div class="hero__aside">
+          <div class="date-pill">
+            <span>Desde</span>
+            <strong>14 de março de 2026</strong>
+          </div>
+
+          <div class="counter-box" aria-live="polite">
+            <span class="counter-box__value" id="daysCount">0</span>
+            <span class="counter-box__label">dias juntos</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="historia" class="story reveal">
+        <div class="section-heading">
+          <span class="section-tag">Nossa história</span>
+          <h2>Como você entrou na minha vida e mudou tudo</h2>
+        </div>
+
+        <div class="quote-grid">
+          <article class="quote-card">
+            <p>"Você tornou meus dias comuns em dias que eu quero lembrar."</p>
+          </article>
+          <article class="quote-card">
+            <p>"Meu lugar favorito é perto de você."</p>
+          </article>
+          <article class="quote-card">
+            <p>"Entre tantas pessoas no mundo, eu tive a sorte de encontrar você."</p>
+          </article>
+          <article class="quote-card">
+            <p>"Você é uma das partes mais bonitas da minha vida."</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="relationship-timer reveal" aria-labelledby="relationship-title">
+        <div class="section-heading section-heading--center">
+          <span class="section-tag">Juntos</span>
+          <h2 id="relationship-title">Juntos há</h2>
+        </div>
+
+        <div class="timer-grid">
+          <div class="timer-card">
+            <span class="timer-card__value" id="timerDays">0</span>
+            <span class="timer-card__label">dias</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-card__value" id="timerHours">0</span>
+            <span class="timer-card__label">horas</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-card__value" id="timerMinutes">0</span>
+            <span class="timer-card__label">minutos</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="momentos" class="gallery-section reveal">
+        <div class="section-heading">
+          <span class="section-tag">Nossos momentos</span>
+        </div>
+
+        <div class="gallery-grid" aria-label="Galeria de fotos do relacionamento">
+          <button class="photo-card" type="button" data-image="assets/aliancas.jpeg" aria-label="Abrir foto das alianças">
+            <img src="assets/aliancas.jpeg" alt="Foto das alianças do relacionamento" loading="lazy" />
+            <span>As nossas alianças</span>
+          </button>
+          <button class="photo-card" type="button" data-image="assets/foto1.jpeg" aria-label="Abrir foto 1">
+            <img src="assets/foto1.jpeg" alt="Foto 1 do relacionamento" loading="lazy" />
+            <span>Nosso presente</span>
+          </button>
+          <button class="photo-card" type="button" data-image="assets/foto2.jpeg" aria-label="Abrir foto 2">
+            <img src="assets/foto2.jpeg" alt="Foto 2 do relacionamento" loading="lazy" />
+            <span>Momentos nossos</span>
+          </button>
+          <button class="photo-card" type="button" data-image="assets/foto3.jpeg" aria-label="Abrir foto 3">
+            <img src="assets/foto3.jpeg" alt="Foto 3 do relacionamento" loading="lazy" />
+            <span>Meu melhor momento</span>
+          </button>
+          <button class="photo-card" type="button" data-image="assets/foto4.jpeg" aria-label="Abrir foto 4">
+            <img src="assets/foto4.jpeg" alt="Foto 4 do relacionamento" loading="lazy" />
+            <span>Nossos planos</span>
+          </button>
+          <button class="photo-card" type="button" data-image="assets/foto5.jpeg" aria-label="Abrir foto 5">
+            <img src="assets/foto5.jpeg" alt="Foto 5 do relacionamento" loading="lazy" />
+            <span>Nosso lar</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="musica" class="music-section reveal">
+        <div class="section-heading">
+          <span class="section-tag">Nossa música</span>
+          <h2>Uma música que me faz lembrar de nós</h2>
+        </div>
+
+        <div class="music-card">
+          <p>
+            Tem músicas que fazem a gente lembrar de momentos. Essa me faz lembrar de nós.
+          </p>
+          <iframe
+            id="spotifyEmbed"
+            title="Player de música do Spotify"
+            src=""
+            width="100%"
+            height="152"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="carta" class="letter-section reveal">
+        <div class="section-heading">
+          <span class="section-tag">Para você</span>
+          <h2>Você é a parte mais bonita da minha vida</h2>
+        </div>
+
+        <article class="letter-card">
+          <!-- ESCREVER TEXTO PARA ELA AQUI -->
+          <p>
+            Amor,
+          </p>
+          <p>
+            Eu venho aqui, através desse site e dessa carta, pra tentar colocar em palavras um pouco do que eu sinto por você.
+          </p>
+          <p>
+            Quero que você saiba o quanto eu sou feliz e grato por ter você na minha vida. Desde que a gente decidiu se unir e caminhar juntos, meus dias ficaram mais coloridos, mais leves e, principalmente, mais felizes.
+          </p>
+          <p>
+            Eu sempre falo pra você que você mudou a minha vida, e eu falo isso porque é verdade. Você mudou a forma como eu enxergo o amor, o futuro e até as pequenas coisas do dia a dia. Pela primeira vez, eu tenho ao meu lado uma pessoa com quem eu realmente quero passar o resto da minha vida. Uma pessoa com quem eu quero construir uma família, viver muitos momentos, realizar sonhos e que eu quero que seja a mãe dos meus filhos.
+          </p>
+          <p>
+            Você me completa de uma forma que eu nem sabia que era possível. Eu sinto que somos metade um do outro, duas pessoas diferentes, mas que escolheram caminhar na mesma direção, lado a lado.
+          </p>
+          <p>
+            Eu sempre peço a Deus que abençoe o nosso relacionamento, que cuide de nós, que nos dê sabedoria, paciência e que nos livre de todo mal. E eu sinto que Ele tem cuidado da gente. Porque, mesmo quando aparecem dificuldades, problemas ou desafios, a gente enfrenta tudo junto.
+          </p>
+          <p>
+            Nem sempre vai ser fácil, e eu sei disso. Mas uma coisa eu quero que você nunca esqueça: eu sempre vou escolher lutar por nós. Quero que, independentemente do que apareça no nosso caminho, a gente continue segurando a mão um do outro, conversando, aprendendo, amadurecendo e nunca desistindo do que estamos construindo.
+          </p>
+          <p>
+            Quero estar com você nos dias bons, mas também nos dias difíceis. Quero comemorar suas conquistas, apoiar seus sonhos, te abraçar quando você precisar e ser alguém em quem você sempre possa confiar.
+          </p>
+          <p>
+            Eu quero viver muita coisa ao seu lado. Quero olhar pra trás daqui a muitos anos e lembrar de tudo que a gente passou, das nossas risadas, das nossas dificuldades, das nossas conquistas, das nossas viagens, dos nossos momentos simples e de tudo aquilo que fez a nossa história ser nossa.
+          </p>
+          <p>
+            Se hoje eu penso no meu futuro, você está nele.
+          </p>
+          <p>
+            Eu quero te ter comigo até o último dia da minha vida. Quero continuar te amando, cuidando de você e fazendo o possível pra que você nunca esqueça o quanto é especial pra mim.
+          </p>
+          <p>
+            Obrigado por ser minha companheira, minha parceira, meu amor e por fazer parte da minha vida.
+          </p>
+          <p>
+            Eu te amo mais do que muitas vezes consigo explicar.
+          </p>
+          <p>
+            E se eu pudesse escolher de novo, entre todas as pessoas do mundo, ainda escolheria você.
+          </p>
+          <p class="letter-signoff">Com muito amor,<br>Para o amor da minha vida!!! ❤️</p>
+        </article>
+      </section>
+
+      <section class="final-message reveal">
+        <p>E essa história ainda está só começando. ❤️</p>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" type="button" aria-label="Fechar imagem">×</button>
+      <img id="lightboxImage" src="" alt="Imagem ampliada do relacionamento" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
